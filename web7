@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Spot Smoke Shop | El Paso, TX</title>
+  <meta name="description" content="El Paso's favorite spot for premium vapes, THCA, glass, merch & more. Open 24/7 at multiple locations. Delivery coming soon!"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --accent: #00ff9d;     /* neon green vibe */
+      --accent-dark: #00cc7a;
+      --text: #e0e0e0;
+      --card: #1a1a1a;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to bottom, #000, var(--bg));
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      color: var(--accent);
+      text-shadow: 0 0 20px rgba(0,255,157,0.6);
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1.4rem;
+      color: #bbb;
+      margin-bottom: 1.5rem;
+    }
+    .status {
+      display: inline-block;
+      background: rgba(0,255,157,0.15);
+      color: var(--accent);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: 2px solid var(--accent);
+      margin: 1rem 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(0,255,157,0.4); }
+      70%     { box-shadow: 0 0 0 15px rgba(0,255,157,0); }
+    }
+    .coming-soon {
+      background: rgba(255, 193, 7, 0.15);
+      color: #ffc107;
+      border: 2px solid #ffc107;
+      padding: 1.2rem;
+      margin: 2rem auto;
+      max-width: 600px;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin: 3rem 0;
+      text-align: center;
+    }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--accent);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .locations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .location-card {
+      background: var(--card);
+      padding: 1.8rem;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: all 0.3s;
+    }
+    .location-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 25px rgba(0,255,157,0.15);
+    }
+    .location-card h3 {
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 2px solid #333;
+      font-size: 0.95rem;
+      color: #888;
+    }
+    .social-links a {
+      color: var(--accent);
+      margin: 0 1rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2.8rem; }
+      .status { font-size: 1.3rem; padding: 0.8rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>THE SPOT</h1>
+    <p class="tagline">El Paso's Favorite Puff Stop</p>
+    <div class="status">OPEN 24/7</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Premium Products • 5-Star Vibes</h2>
+      <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+        Vapes • THCA • Glass • Edibles • Concentrates • Merch & More<br>
+        Imported top-shelf products • Best prices in the 915
+      </p>
+    </section>
+
+    <div class="coming-soon">
+      🚀 <strong>Delivery Coming Soon!</strong> 🚀<br>
+      Get your favorites delivered straight to your door — stay tuned!
+    </div>
+
+    <section>
+      <h2>Our Locations</h2>
+      <div class="locations">
+        <div class="location-card">
+          <h3>Pebble Hills</h3>
+          <p>14087 Pebble Hills Blvd, Ste 106<br>El Paso, TX 79938</p>
+        </div>
+        <div class="location-card">
+          <h3>Dyer St</h3>
+          <p>9740 Dyer St #107<br>El Paso, TX 79924</p>
+        </div>
+        <div class="location-card">
+          <h3>Zaragoza</h3>
+          <p>1641 N Zaragoza Rd<br>El Paso, TX 79936</p>
+        </div>
+        <div class="location-card">
+          <h3>Kenazo / Horizon City</h3>
+          <p>494 N Kenazo Ave<br>El Paso, TX 79928</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Follow Us</h2>
+      <p class="social-links">
+        <a href="https://www.instagram.com/thespotsmoke915" target="_blank">@thespotsmoke915</a> •
+        <a href="https://x.com/thespotep" target="_blank">@thespotep</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 The Spot Smoke Shop • El Paso, Texas • 21+ ID required • Support Local 915</p>
+  </footer>
+
+</body>
+</html>
